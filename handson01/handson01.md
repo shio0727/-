@@ -45,4 +45,4 @@ $ chown apache:apache -R /var/www/html
 パスワード名：RDSのPW  
 データベースのホスト：RDSのエンドポイント  
 ```  
-![WordPress](/img/wordpress.png)
+![WordPress](./img/wordpress.png)
