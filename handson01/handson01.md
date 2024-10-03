@@ -37,10 +37,12 @@ $ chown apache:apache -R /var/www/html
 
 ```  
 - プラウザから初期設定を行う  
+
+
 ```bash:title  
 データベース名：WordPress  
 ユーザー名：WordPress  
 パスワード名：RDSのPW  
 データベースのホスト：RDSのエンドポイント  
-
-![](/img/wordpress.png)
+```  
+![WordPress](/img/wordpress.png)
