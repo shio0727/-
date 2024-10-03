@@ -1,4 +1,4 @@
-#ハンズオン01  
+# ハンズオン01  
 - 基本的なブログサービスの構築（シングル構成）  
 構成図  
 ![kouseizu]()
@@ -43,4 +43,4 @@ $ chown apache:apache -R /var/www/html
 パスワード名：RDSのPW  
 データベースのホスト：RDSのエンドポイント  
 
-![]()
+![](/img/wordpress.png)
