@@ -1,7 +1,7 @@
 # ハンズオン01  
 - 基本的なブログサービスの構築（シングル構成）  
 構成図  
-![kouseizu]()
+![kouseizu](./img/handson1.drawio.png)
 
 ※環境構築部分は[課題](https://github.com/shio0727/Kadaiyou/blob/main/lecture04.md)と重複する為割愛する  
 
