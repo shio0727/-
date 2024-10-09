@@ -15,15 +15,15 @@ $ vi index.php　　
 echo '<p>Web Server 1</p>';  
 #追加する  
 ```  
-![1](./img/) 
+![1](./img/handson02/img02/server1.png) 
 - EC2のAMIを取得  
-![AMI](./img/)  
+![AMI](./img/handson02/img02/myAMI.png)  
 - AMIからEC2を起動  
-![AMI](./img/)  
+![AMI](./img/handson02/img02/EC2 2.png)  
 起動したのちに二つ目のWebサーバーのindex.phpを編集して識別できるように”２”と表示させる。  
-![2](./img/) 
+![2](./img/handson02/img02/servsr2.png) 
 - ELBの作成  
-![ELB](./img/)  
+![ELB](./img/handson02/img02/LB.png)  
 - DBの情報の更新  
 ```bash:title  
 $ mysql -h database-1.xxxxxxxxxxxxxxxxxxxxxxx.ap-northeast-1.rds.amazonaws.com -u wordpress -p  
@@ -34,7 +34,7 @@ $ UPDATE wp_options SET option_value = 'http://xx.xx.xx.xx' WHERE option_name IN
 #EC2のパブリックIPだった部分をELBのDNS名に変更する。  
 ```
 - WebサーバーのセキュリティグループをELBからの通信のみにする  
-![sg](./img/)  
+![sg](./img/handson02/img02/sg.png)  
 - RDSをマルチAZ構成に冗長化  
 RDSの変更からマルチAZ構成に変更する。フェイルオーバーで再起動  
-![sg](./img/)
+![sg](./img/handson02/img02/RDS.png)
