@@ -24,7 +24,7 @@ Auto Scaling全体のCPU使用率（70％以上）を監視するアラームを
 
 - #### CloudWatchアラームの作成  
 CPU使用率が70％以上の時に通知が登録されたメールアドレスに来るようにする。  
-一度CloudWatchni関しては授業で[課題](https://github.com/shio0727/Kadaiyou/blob/main/lecture06/lecture06.md)
+一度CloudWatchに関しては授業で[課題](https://github.com/shio0727/Kadaiyou/blob/main/lecture06/lecture06.md)
 で取り扱っている為、割愛する。  
 メトリクスはEC2→AutoScalingグループ別→CPUUtilizationを選択する  
 
