@@ -11,27 +11,38 @@ Auto Scaling全体のCPU使用率（70％以上）を監視するアラームを
 前回作成したEC2を起動し、EC2からテンプレートを作成する。  
 テンプレートの作成の際、マシンイメージ（AMI）は前回使用した自分のAMIを使用する。  
 
-![template01](./img03/)  
+![template01](./img03/template.png)  
 
-![template02](./img03/)  
+![template02](./img03/template2.png)  
 
 - #### auto scalingグループの作成  
 
-![auto01](./img03/)  
-![auto02](./img03/)  
-![auto03](./img03/)  
-![auto04](./img03/)  
+![auto01](./img03/auto1.png)  
+![auto02](./img03/auto2.png)  
+![auto03](./img03/auto3.png)  
+![auto04](./img03/auto4.png)  
 
 - #### CloudWatchアラームの作成  
 CPU使用率が70％以上の時に通知が登録されたメールアドレスに来るようにする。  
 メトリクスはEC2→AutoScalingグループ別→CPUUtilizationを選択する  
 
-![alarm](./img03/)   
+![alarm](./img03/alarm.png)   
 
 - #### スケーリングポリシーの作成  
 CloudWatchアラームをスケーリングポリシーに連携する
 
-![scalingpolicy](./img03/)  
+![scalingpolicy](./img03/scalingpolicy.png)  
 
 - #### 動作確認  
-EC2に負荷をかける。  
+EC2に負荷をかける。 
+
+```bash:title  
+$ yes >> /dev/null &  
+```  
+![fuka](./img03/fuka.png) 
+![log](./img03/EC2tuikalog.png)  
+
+
+
+
+
