@@ -5,7 +5,7 @@ Auto Scaling全体のCPU使用率（70％以上）を監視するアラームを
 
 - 構成図  
 
-![koiseizu](./img03/) 
+![koiseizu](./img03/handson03.drawio.png) 
 
 - #### 起動テンプレートの作成  
 前回作成したEC2を起動し、EC2からテンプレートを作成する。  
@@ -25,7 +25,7 @@ Auto Scaling全体のCPU使用率（70％以上）を監視するアラームを
 - #### CloudWatchアラームの作成  
 CPU使用率が70％以上の時に通知が登録されたメールアドレスに来るようにする。  
 一度CloudWatchに関しては授業で[課題](https://github.com/shio0727/Kadaiyou/blob/main/lecture06/lecture06.md)
-で取り扱っている為、割愛する。  
+で取り扱っている為割愛する。  
 メトリクスはEC2→AutoScalingグループ別→CPUUtilizationを選択する  
 
 ![alarm](./img03/alarm.png)   
@@ -36,14 +36,14 @@ CloudWatchアラームをスケーリングポリシーに連携する
 ![scalingpolicy](./img03/scalingpolicy.png)  
 
 - #### 動作確認  
-EC2に負荷をかける。 
+SSH接続したEC2に負荷をかける。 
 
 ```bash:title  
 $ yes >> /dev/null &  
 ```  
 ![fuka](./img03/fuka.png) 
 
-AutoScaling成功！
+EC2が増加している事をlogで確認する。
 ![log](./img03/EC2tuikalog.png)  
 
 
