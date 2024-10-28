@@ -1,7 +1,7 @@
-# ハンズオン03  
-- Cloudでログの監視をする。  
-
+# ハンズオン03+@  
+- Cloudでログの監視をする  
 構成図  
+![kouseizu]()
 
 - CloudWatcheエージェントをEC2にインストールする  
 ```bash:title   
@@ -27,7 +27,7 @@ log_group_name = HttpErrorLog
 log_stream_name = {instance_id}
 datetime_format = %b %d %H:%M:%S  
 ```  
-![awslogs.conf]()  
+![awslogs.conf](./img03+@/awslogs.png)  
 
 - EC2が再起動後に自動でawslogsdが立ち上がるように設定する  
 ```bash:title  
@@ -40,10 +40,10 @@ $ systemctl restart awslogsd
 ```  
 
 - EC2にIAMロールをアタッチする  
-ポリシーの作成
-![policy]()  
-IAMロールの変更　　
-![IAM]()  
+ポリシーの作成  
+![policy](./img03+@/iam.png)  
+IAMロールの変更  
+![IAM](./img03+@/hennkou.png)  
 logの確認  
-![log]()  
-![log2]()
+![log](./img03+@/log.png)  
+![log2](./img03+@/log2.png)
