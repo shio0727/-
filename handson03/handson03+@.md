@@ -1,7 +1,6 @@
 # ハンズオン03+@  
 - Cloudでログの監視をする  
-構成図  
-![kouseizu]()
+EC2にインストールされたアパッチのアクセスログをCloudWatchに送信する方法を確認する。  
 
 - CloudWatcheエージェントをEC2にインストールする  
 ```bash:title   
