@@ -1,8 +1,8 @@
 # ハンズオン03+@  
-- Cloudでログの監視をする  
+- ## Cloudでログの監視をする  
 EC2にインストールされたアパッチのアクセスログをCloudWatchに送信する方法を確認する。  
 
-- CloudWatcheエージェントをEC2にインストールする  
+- ### CloudWatcheエージェントをEC2にインストールする  
 ```bash:title   
 $ sudo yum install awslogs  
 $ cd /etc/awslogs/  
@@ -12,7 +12,7 @@ $ sudo vi awscli.conf
 #リージョンを東京に変更  
 $ sudo vi awslogs.conf  
 ```  
-- awslogs.confに以下を追加  
+- ### awslogs.confに以下を追加  
 ```bash:title 
 [HttpAccessLog]
 file = /var/log/httpd/access_log
@@ -28,7 +28,7 @@ datetime_format = %b %d %H:%M:%S
 ```  
 ![awslogs.conf](./img03+@/awslogs.png)  
 
-- EC2が再起動後に自動でawslogsdが立ち上がるように設定する  
+- ### EC2が再起動後に自動でawslogsdが立ち上がるように設定する  
 ```bash:title  
 $ sudo systemctl enable awslogsd  
 #EC2が再起動しても自動で立ち上がるように  
@@ -38,7 +38,7 @@ $ systemctl restart awslogsd
 #リスタートすることでlogが送られるようになる  
 ```  
 
-- EC2にIAMロールをアタッチする  
+- ### EC2にIAMロールをアタッチする  
 ポリシーの作成  
 ![policy](./img03+@/iam.png)  
 IAMロールの変更  
