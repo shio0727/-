@@ -13,7 +13,7 @@
 |冗長構成でのブログサービスの構築|[ハンズオン02](handson02/handson02.md)|  
 |スケーラビリティのあるブログサービスの構築|[ハンズオン03](handson03/handson03.md)|
 |CloudWatchでのログ監視|[ハンズオン03+＠](handson03/handson03+@.md)|  
-|独自ドメインを設定する<ul><li>障害発生時はSORRYページを表示させる|[ハンズオン04](handson04/handson04.md)　　
+|独自ドメインを設定する、障害発生時はSORRYページを表示させる|[ハンズオン04](handson04/handson04.md)　　
 
 
 
