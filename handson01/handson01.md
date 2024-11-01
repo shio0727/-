@@ -1,16 +1,16 @@
 # ハンズオン01  
-- 基本的なブログサービスの構築（シングル構成）  
+- ## 基本的なブログサービスの構築（シングル構成）  
 構成図  
 ![kouseizu](./img/handson.drawio.png)
 
 ※環境構築部分は[課題](https://github.com/shio0727/Kadaiyou/blob/main/lecture04.md)と重複する為割愛する  
 
-- WordPressのインストール 
+- ### WordPressのインストール 
 
 
 ```bash:title
 $ sudo su -  
-#理者権限に切り替える
+#管理者権限に切り替える
 
 $ yum -y update  
 #EC2のパッケージの状態を最新版にする
@@ -36,12 +36,12 @@ $ chown apache:apache -R /var/www/html
 #権限変更を行う  
 
 ```  
-- プラウザから初期設定を行う  
+- ### プラウザから初期設定を行う  
 
 
 ```bash:title  
-データベース名：WordPress  
-ユーザー名：WordPress  
+データベース名：wordpress  
+ユーザー名：wordpress  
 パスワード名：RDSのPW  
 データベースのホスト：RDSのエンドポイント  
 ```  
